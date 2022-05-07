@@ -153,6 +153,7 @@ void Print(float arr[], const int n)
 	}
 	cout << endl;
 }
+
 void Print(long long int arr[], const int n)
 {
 	//Вывод массива на экран:
