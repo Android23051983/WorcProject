@@ -135,6 +135,7 @@ void Print(int arr[], const int n)
 	}
 	cout << endl;
 }
+
 void Print(double arr[], const int n)
 {
 	//Вывод массива на экран:
