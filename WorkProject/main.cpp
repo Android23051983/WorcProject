@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 using namespace std;
 
 void FillRand(int arr[], const int n);
@@ -25,11 +25,11 @@ float Sum(float arr[], const int n);
 long long int Sum(long long int arr[], const int n);
 int Sum(char arr[], const int n);
 
-double Avg(int arr[], const int n);	//Avg (Avarage - Среднее арифметическое)
-double Avg(double arr[], const int n);	//Avg (Avarage - Среднее арифметическое)
-float Avg(float arr[], const int n);	//Avg (Avarage - Среднее арифметическое)
-double Avg(long long int arr[], const int n);	//Avg (Avarage - Среднее арифметическое)
-double Avg(char arr[], const int n);	//Avg (Avarage - Среднее арифметическое)
+double Avg(int arr[], const int n);	//Avg (Avarage - РЎСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ)
+double Avg(double arr[], const int n);	//Avg (Avarage - РЎСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ)
+float Avg(float arr[], const int n);	//Avg (Avarage - РЎСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ)
+double Avg(long long int arr[], const int n);	//Avg (Avarage - РЎСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ)
+double Avg(char arr[], const int n);	//Avg (Avarage - РЎСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ)
 
 int minValueIn(int arr[], const int n);
 double minValueIn(double arr[], const int n);
@@ -50,10 +50,10 @@ void main()
 	int arr[n];
 	FillRand(arr, n);
 	Print(arr, n);
-	cout << "Сумма элементов массива: " << Sum(arr, n) << endl;
-	cout << "Среднее-арифметическое элементов массива: " << Avg(arr, n) << endl;
-	cout << "Минимальное значение в массиве: " << minValueIn(arr, n) << endl;
-	cout << "Максимальное значение в массиве: " << maxValueIn(arr, n) << endl;
+	cout << "РЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: " << Sum(arr, n) << endl;
+	cout << "РЎСЂРµРґРЅРµРµ-Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: " << Avg(arr, n) << endl;
+	cout << "РњРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ РјР°СЃСЃРёРІРµ: " << minValueIn(arr, n) << endl;
+	cout << "РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ РјР°СЃСЃРёРІРµ: " << maxValueIn(arr, n) << endl;
 	Sort(arr, n);
 	Print(arr, n);
 	cout << "----------------------------------------------------------------------------" << endl;
@@ -62,10 +62,10 @@ void main()
 	float brr[m];
 	FillRand(brr, m);
 	Print(brr, m);
-	cout << "Сумма элементов массива: " << Sum(brr, m) << endl;
-	cout << "Среднее-арифметическое элементов массива: " << Avg(brr, m) << endl;
-	cout << "Минимальное значение в массиве: " << minValueIn(brr, m) << endl;
-	cout << "Максимальное значение в массиве: " << maxValueIn(brr, m) << endl;
+	cout << "РЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: " << Sum(brr, m) << endl;
+	cout << "РЎСЂРµРґРЅРµРµ-Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: " << Avg(brr, m) << endl;
+	cout << "РњРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ РјР°СЃСЃРёРІРµ: " << minValueIn(brr, m) << endl;
+	cout << "РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ РјР°СЃСЃРёРІРµ: " << maxValueIn(brr, m) << endl;
 	Sort(brr, m);
 	Print(brr, m);
 	cout << "----------------------------------------------------------------------------" << endl;
@@ -74,16 +74,16 @@ void main()
 	char crr[l];
 	FillRand(crr, l);
 	Print(crr, l);
-	cout << "Сумма элементов массива: " << Sum(crr, l) << endl;
-	cout << "Среднее-арифметическое элементов массива: " << Avg(crr, l) << endl;
-	cout << "Минимальное значение в массиве: " << minValueIn(crr, l) << endl;
-	cout << "Максимальное значение в массиве: " << maxValueIn(crr, l) << endl;
+	cout << "РЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: " << Sum(crr, l) << endl;
+	cout << "РЎСЂРµРґРЅРµРµ-Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: " << Avg(crr, l) << endl;
+	cout << "РњРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ РјР°СЃСЃРёРІРµ: " << minValueIn(crr, l) << endl;
+	cout << "РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ РјР°СЃСЃРёРІРµ: " << maxValueIn(crr, l) << endl;
 	Sort(crr, l);
 	Print(crr, l);
 }
 void FillRand(int arr[], const int n)
 {
-	//Заполняем случайными чослами:
+	//Р—Р°РїРѕР»РЅСЏРµРј СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РѕСЃР»Р°РјРё:
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = rand() % 100;
@@ -91,7 +91,7 @@ void FillRand(int arr[], const int n)
 }
 void FillRand(double arr[], const int n)
 {
-	//Заполняем случайными чослами:
+	//Р—Р°РїРѕР»РЅСЏРµРј СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РѕСЃР»Р°РјРё:
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = rand() % 10000;
@@ -100,7 +100,7 @@ void FillRand(double arr[], const int n)
 }
 void FillRand(float arr[], const int n)
 {
-	//Заполняем случайными чослами:
+	//Р—Р°РїРѕР»РЅСЏРµРј СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РѕСЃР»Р°РјРё:
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = rand() % 10000;
@@ -109,7 +109,7 @@ void FillRand(float arr[], const int n)
 }
 void FillRand(long long int arr[], const int n)
 {
-	//Заполняем случайными чослами:
+	//Р—Р°РїРѕР»РЅСЏРµРј СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РѕСЃР»Р°РјРё:
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = rand() % 100;
@@ -118,7 +118,7 @@ void FillRand(long long int arr[], const int n)
 }
 void FillRand(char arr[], const int n)
 {
-	//Заполняем случайными чослами:
+	//Р—Р°РїРѕР»РЅСЏРµРј СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РѕСЃР»Р°РјРё:
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = rand() % 100;
@@ -128,7 +128,7 @@ void FillRand(char arr[], const int n)
 
 void Print(int arr[], const int n)
 {
-	//Вывод массива на экран:
+	//Р’С‹РІРѕРґ РјР°СЃСЃРёРІР° РЅР° СЌРєСЂР°РЅ:
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << "\t";
@@ -137,7 +137,7 @@ void Print(int arr[], const int n)
 }
 void Print(double arr[], const int n)
 {
-	//Вывод массива на экран:
+	//Р’С‹РІРѕРґ РјР°СЃСЃРёРІР° РЅР° СЌРєСЂР°РЅ:
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << "\t";
@@ -146,7 +146,7 @@ void Print(double arr[], const int n)
 }
 void Print(float arr[], const int n)
 {
-	//Вывод массива на экран:
+	//Р’С‹РІРѕРґ РјР°СЃСЃРёРІР° РЅР° СЌРєСЂР°РЅ:
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << "\t";
@@ -155,7 +155,7 @@ void Print(float arr[], const int n)
 }
 void Print(long long int arr[], const int n)
 {
-	//Вывод массива на экран:
+	//Р’С‹РІРѕРґ РјР°СЃСЃРёРІР° РЅР° СЌРєСЂР°РЅ:
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << "\t";
@@ -164,7 +164,7 @@ void Print(long long int arr[], const int n)
 }
 void Print(char arr[], const int n)
 {
-	//Вывод массива на экран:
+	//Р’С‹РІРѕРґ РјР°СЃСЃРёРІР° РЅР° СЌРєСЂР°РЅ:
 	for (int i = 0; i < n; i++)
 	{
 		cout << int(arr[i]) << "\t";
@@ -174,7 +174,7 @@ void Print(char arr[], const int n)
 
 void Sort(int arr[], const int n)
 {
-	//Сортировка массива:
+	//РЎРѕСЂС‚РёСЂРѕРІРєР° РјР°СЃСЃРёРІР°:
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = i + 1; j < n; j++)
@@ -190,7 +190,7 @@ void Sort(int arr[], const int n)
 }
 void Sort(double arr[], const int n)
 {
-	//Сортировка массива:
+	//РЎРѕСЂС‚РёСЂРѕРІРєР° РјР°СЃСЃРёРІР°:
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = i + 1; j < n; j++)
@@ -206,7 +206,7 @@ void Sort(double arr[], const int n)
 }
 void Sort(float arr[], const int n)
 {
-	//Сортировка массива:
+	//РЎРѕСЂС‚РёСЂРѕРІРєР° РјР°СЃСЃРёРІР°:
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = i + 1; j < n; j++)
@@ -222,7 +222,7 @@ void Sort(float arr[], const int n)
 }
 void Sort(long long int arr[], const int n)
 {
-	//Сортировка массива:
+	//РЎРѕСЂС‚РёСЂРѕРІРєР° РјР°СЃСЃРёРІР°:
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = i + 1; j < n; j++)
@@ -238,7 +238,7 @@ void Sort(long long int arr[], const int n)
 }
 void Sort(char arr[], const int n)
 {
-	//Сортировка массива:
+	//РЎРѕСЂС‚РёСЂРѕРІРєР° РјР°СЃСЃРёРІР°:
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = i + 1; j < n; j++)
