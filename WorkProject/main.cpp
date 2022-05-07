@@ -7,19 +7,22 @@ void FillRand(float arr[], const int n);
 void FillRand(long long int arr[], const int n);
 void FillRand(char arr[], const int n);
 
-void Print(int arr[], const int n);
-void Print(double arr[], const int n);
-void Print(float arr[], const int n);
-void Print(long long int arr[], const int n);
-void Print(char arr[], const int n);
+template<typename T>
+void Print(T arr[], const int n);
+//void Print(double arr[], const int n);
+//void Print(float arr[], const int n);
+//void Print(long long int arr[], const int n);
+//void Print(char arr[], const int n);
 
-void Sort(int arr[], const int n);
-void Sort(double arr[], const int n);
-void Sort(float arr[], const int n);
-void Sort(long long int arr[], const int n);
-void Sort(char arr[], const int n);
+template<typename T>
+void Sort(T arr[], const int n);
+//void Sort(double arr[], const int n);
+//void Sort(float arr[], const int n);
+//void Sort(long long int arr[], const int n);
+//void Sort(char arr[], const int n);
 
-int Sum(int arr[], const int n);
+template<typename T>
+T Sum(T arr[], const int n);
 double Sum(double arr[], const int n);
 float Sum(float arr[], const int n);
 long long int Sum(long long int arr[], const int n);
@@ -126,7 +129,8 @@ void FillRand(char arr[], const int n)
 	}
 }
 
-void Print(int arr[], const int n)
+template<typename T>
+void Print(T arr[], const int n)
 {
 	//Вывод массива на экран:
 	for (int i = 0; i < n; i++)
@@ -136,44 +140,45 @@ void Print(int arr[], const int n)
 	cout << endl;
 }
 
-void Print(double arr[], const int n)
-{
-	//Вывод массива на экран:
-	for (int i = 0; i < n; i++)
-	{
-		cout << arr[i] << "\t";
-	}
-	cout << endl;
-}
-void Print(float arr[], const int n)
-{
-	//Вывод массива на экран:
-	for (int i = 0; i < n; i++)
-	{
-		cout << arr[i] << "\t";
-	}
-	cout << endl;
-}
-void Print(long long int arr[], const int n)
-{
-	//Вывод массива на экран:
-	for (int i = 0; i < n; i++)
-	{
-		cout << arr[i] << "\t";
-	}
-	cout << endl;
-}
-void Print(char arr[], const int n)
-{
-	//Вывод массива на экран:
-	for (int i = 0; i < n; i++)
-	{
-		cout << int(arr[i]) << "\t";
-	}
-	cout << endl;
-}
+//void Print(double arr[], const int n)
+//{
+//	//Вывод массива на экран:
+//	for (int i = 0; i < n; i++)
+//	{
+//		cout << arr[i] << "\t";
+//	}
+//	cout << endl;
+//}
+//void Print(float arr[], const int n)
+//{
+//	//Вывод массива на экран:
+//	for (int i = 0; i < n; i++)
+//	{
+//		cout << arr[i] << "\t";
+//	}
+//	cout << endl;
+//}
+//void Print(long long int arr[], const int n)
+//{
+//	//Вывод массива на экран:
+//	for (int i = 0; i < n; i++)
+//	{
+//		cout << arr[i] << "\t";
+//	}
+//	cout << endl;
+//}
+//void Print(char arr[], const int n)
+//{
+//	//Вывод массива на экран:
+//	for (int i = 0; i < n; i++)
+//	{
+//		cout << int(arr[i]) << "\t";
+//	}
+//	cout << endl;
+//}
 
-void Sort(int arr[], const int n)
+template<typename T>
+void Sort(T arr[], const int n)
 {
 	//Сортировка массива:
 	for (int i = 0; i < n; i++)
@@ -182,123 +187,124 @@ void Sort(int arr[], const int n)
 		{
 			if (arr[j] < arr[i])
 			{
-				int buffer = arr[i];
+				T buffer = arr[i];
 				arr[i] = arr[j];
 				arr[j] = buffer;
 			}
 		}
 	}
 }
-void Sort(double arr[], const int n)
-{
-	//Сортировка массива:
-	for (int i = 0; i < n; i++)
-	{
-		for (int j = i + 1; j < n; j++)
-		{
-			if (arr[j] < arr[i])
-			{
-				double buffer = arr[i];
-				arr[i] = arr[j];
-				arr[j] = buffer;
-			}
-		}
-	}
-}
-void Sort(float arr[], const int n)
-{
-	//Сортировка массива:
-	for (int i = 0; i < n; i++)
-	{
-		for (int j = i + 1; j < n; j++)
-		{
-			if (arr[j] < arr[i])
-			{
-				float buffer = arr[i];
-				arr[i] = arr[j];
-				arr[j] = buffer;
-			}
-		}
-	}
-}
-void Sort(long long int arr[], const int n)
-{
-	//Сортировка массива:
-	for (int i = 0; i < n; i++)
-	{
-		for (int j = i + 1; j < n; j++)
-		{
-			if (arr[j] < arr[i])
-			{
-				long long int buffer = arr[i];
-				arr[i] = arr[j];
-				arr[j] = buffer;
-			}
-		}
-	}
-}
-void Sort(char arr[], const int n)
-{
-	//Сортировка массива:
-	for (int i = 0; i < n; i++)
-	{
-		for (int j = i + 1; j < n; j++)
-		{
-			if (arr[j] < arr[i])
-			{
-				char buffer = arr[i];
-				arr[i] = arr[j];
-				arr[j] = buffer;
-			}
-		}
-	}
-}
+//void Sort(double arr[], const int n)
+//{
+//	//Сортировка массива:
+//	for (int i = 0; i < n; i++)
+//	{
+//		for (int j = i + 1; j < n; j++)
+//		{
+//			if (arr[j] < arr[i])
+//			{
+//				double buffer = arr[i];
+//				arr[i] = arr[j];
+//				arr[j] = buffer;
+//			}
+//		}
+//	}
+//}
+//void Sort(float arr[], const int n)
+//{
+//	//Сортировка массива:
+//	for (int i = 0; i < n; i++)
+//	{
+//		for (int j = i + 1; j < n; j++)
+//		{
+//			if (arr[j] < arr[i])
+//			{
+//				float buffer = arr[i];
+//				arr[i] = arr[j];
+//				arr[j] = buffer;
+//			}
+//		}
+//	}
+//}
+//void Sort(long long int arr[], const int n)
+//{
+//	//Сортировка массива:
+//	for (int i = 0; i < n; i++)
+//	{
+//		for (int j = i + 1; j < n; j++)
+//		{
+//			if (arr[j] < arr[i])
+//			{
+//				long long int buffer = arr[i];
+//				arr[i] = arr[j];
+//				arr[j] = buffer;
+//			}
+//		}
+//	}
+//}
+//void Sort(char arr[], const int n)
+//{
+//	//Сортировка массива:
+//	for (int i = 0; i < n; i++)
+//	{
+//		for (int j = i + 1; j < n; j++)
+//		{
+//			if (arr[j] < arr[i])
+//			{
+//				char buffer = arr[i];
+//				arr[i] = arr[j];
+//				arr[j] = buffer;
+//			}
+//		}
+//	}
+//}
 
-int Sum(int arr[], const int n)
+template<typename T>
+T Sum(T arr[], const int n)
 {
-	int sum = 0;
+	T sum = 0;
 	for (int i = 0; i < n; i++)
 	{
 		sum += arr[i];
 	}
 	return sum;
 }
-double Sum(double arr[], const int n)
-{
-	double sum = 0;
-	for (int i = 0; i < n; i++)
-	{
-		sum += arr[i];
-	}
-	return sum;
-}
-float Sum(float arr[], const int n)
-{
-	float sum = 0.0;
-	for (int i = 0; i < n; i++)
-	{
-		sum += arr[i];
-	}
-	return sum;
-}
-long long int Sum(long long int arr[], const int n)
-{
-	long long int sum = 0;
-	for (int i = 0; i < n; i++)
-	{
-		sum += arr[i];
-	}
-	return sum;
-}
-int Sum(char arr[], const int n)
-{
-	int sum = 0;
-	for (int i = 0; i < n; i++)
-	{
-		sum += arr[i];
-	}
-	return sum;
-}
+//double Sum(double arr[], const int n)
+//{
+//	double sum = 0;
+//	for (int i = 0; i < n; i++)
+//	{
+//		sum += arr[i];
+//	}
+//	return sum;
+//}
+//float Sum(float arr[], const int n)
+//{
+//	float sum = 0.0;
+//	for (int i = 0; i < n; i++)
+//	{
+//		sum += arr[i];
+//	}
+//	return sum;
+//}
+//long long int Sum(long long int arr[], const int n)
+//{
+//	long long int sum = 0;
+//	for (int i = 0; i < n; i++)
+//	{
+//		sum += arr[i];
+//	}
+//	return sum;
+//}
+//int Sum(char arr[], const int n)
+//{
+//	int sum = 0;
+//	for (int i = 0; i < n; i++)
+//	{
+//		sum += arr[i];
+//	}
+//	return sum;
+//}
 
 double Avg(int arr[], const int n)
 {
